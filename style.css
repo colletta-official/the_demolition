@@ -3,6 +3,8 @@
 	font-family:'Noto Serif KR', Sans-serif;
 	font-weight:400;
 	color:#ffffff;
+	margin:0px;
+	padding:0px;
 }
 header{
 	position:fixed;
