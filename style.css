@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:400,700');
-#{
+*{
 	font-family:'Noto Serif KR', Sans-serif;
 	font-weight:400;
 	color:#ffffff;
@@ -31,36 +31,36 @@ section{
 	width:100vw;
 	height:100vh;
 }
-.d0{
+#d0{
 	background:#000000;
 }
-.d1{
+#d1{
 	background: url('img/the_demolition-1.png') center/cover;
 }
-.d2{
+#d2{
 	background: url('img/the_demolition-2.png') center/cover;
 }
-.d3{
+#d3{
 	background: url('img/the_demolition-3.png') center/cover;
 }
-.d4{
+#d4{
 	background: url('img/the_demolition-4.png') center/cover;
 }
-.d5{
+#d5{
 	background: url('img/the_demolition-5.png') center/cover;
 }
-.d6{
+#d6{
 	background: url('img/the_demolition-6.png') center/cover;
 }
-.d7{
+#d7{
 	background: url('img/the_demolition-7.png') center/cover;
 }
-.d8{
+#d8{
 	background: url('img/the_demolition-8.png') center/cover;
 }
-.d9{
+#d9{
 	background: url('img/the_demolition-9.png') center/cover;
 }
-.d10{
+#d10{
 	background-color:#ffff00;
 }
