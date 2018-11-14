@@ -35,6 +35,9 @@ section{
 }
 #d0{
 	background:#000000;
+	color:#ffffff;
+	text-align:center;
+	vertical-align:center;
 }
 #d1{
 	background: url('img/the_demolition-01.png') center/cover;
@@ -65,4 +68,7 @@ section{
 }
 #d10{
 	background-color:#ffff00;
+}
+footer{
+	text-align:center;
 }
