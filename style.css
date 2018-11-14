@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:400,700');
+#{
+	font-family:'Noto Serif KR', Sans-serif;
+	font-weight:400;
+	color:#ffffff;
+}
+header{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+}
+h2{
+	position:relative;
+	float:left;
+	font-weight:700;
+	top:50px;
+	left:0px;
+	padding:30px;
+}
+ul{
+	float:right;
+	list-style:none;
+}
+ul li{
+	display:inline-block;
+	width:150px;
+	padding:30px 20px;
+}
+section{
+	width:100vw;
+	height:100vh;
+}
+.d0{
+	background:#000000;
+}
+.d1{
+	background: url('img/the_demolition-1.png') center/cover;
+}
+.d2{
+	background: url('img/the_demolition-2.png') center/cover;
+}
+.d3{
+	background: url('img/the_demolition-3.png') center/cover;
+}
+.d4{
+	background: url('img/the_demolition-4.png') center/cover;
+}
+.d5{
+	background: url('img/the_demolition-5.png') center/cover;
+}
+.d6{
+	background: url('img/the_demolition-6.png') center/cover;
+}
+.d7{
+	background: url('img/the_demolition-7.png') center/cover;
+}
+.d8{
+	background: url('img/the_demolition-8.png') center/cover;
+}
+.d9{
+	background: url('img/the_demolition-9.png') center/cover;
+}
+.d10{
+	background-color:#ffff00;
+}
