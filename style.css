@@ -36,10 +36,9 @@ section{
 #d0{
 	background:#000000;
 	text-align:center;
-}
-#d0 .wrapper
-{
-	margin:auto 0px;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
 }
 #d0 .wrapper p{
 	color:#ffffff;
