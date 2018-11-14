@@ -41,6 +41,11 @@ section{
 	align-items: center;
 }
 #d0 .wrapper p{
+	font-size:0.8em;
+	color:#ffffff;
+}
+#d0 .wrapper p .headline{
+	font-size:3em;
 	color:#ffffff;
 }
 #d1{
