@@ -25,16 +25,17 @@ h2{
 	left:0px;
 	padding:30px;
 }
-#navi_{
+ul{
 	float:right;
 	width:400px;
 	list-style:none;
 }
-#navi_ li{
+ul li{
 	display:inline-block;
 	width:90px;
 	padding:30px 20px;
 	text-align:center;
+	cursor:pointer;
 }
 section{
 	width:100vw;
