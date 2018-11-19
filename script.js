@@ -47,7 +47,8 @@ function section_next(e)
 {
 	var id=e.id;
 	var no=parseInt(id.substring(2, id.length));
-	console.log(no);
+	console.log(id, no);
+	no++;
 	if(no==10) return null;
 	else return $("#d"+no);
 }
