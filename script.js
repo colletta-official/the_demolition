@@ -12,23 +12,31 @@ $(document).ready(function(){
 			}
 			else if (event.detail) delta = -event.detail / 3;
 			var moveTop = null;
-			console.log(section_next(this), section_prev(this));
+			var next=section_next(this);
+			var prev=section_prev(this);
 			if (delta < 0) {
-				if(section_next(this)!==null) {
-					moveTop = section_next(this).offset().top;
+				if(next!==null) {
+					moveTop = next.offset().top;
 				}
 			}
 			else {
-				if (section_prev(this)!==null) {
-					moveTop = section_prev(this).offset().top;
+				if (prev!==null) {
+					moveTop = prev.offset().top;
 				}
 			}
-			$("html,body").stop().animate(
+			if(next!==null)
 			{
-				scrollTop: moveTop + 'px'
-				}, {
-				duration: 500, complete: function () {}
-			});
+				$("html,body").stop().animate(
+				{
+					scrollTop: moveTop + 'px'
+					}, {
+					duration: 500, complete: function () {}
+				});
+			}
+		});
+		$(this).on("click", function (e) {
+			e.preventDefault();
+			console.log(this.find("div"));
 		});
 	});
 });
@@ -47,7 +55,6 @@ function section_next(e)
 {
 	var id=e.id;
 	var no=parseInt(id.substring(1, id.length));
-	console.log(id, no);
 	no++;
 	if(no==11) return null;
 	else return $("#d"+no);
