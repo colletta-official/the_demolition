@@ -24,13 +24,14 @@ ul{
 	float:right;
 	width:30%;
 	list-style:none;
+	color:#000000;
+}
+ul.white{
+	color:#ffffff;
 }
 ul li{
 	display:inline-block;
 	padding:30px 20px;
-}
-ui li a{
-	text-decoration:none;
 }
 section{
 	width:100vw;
