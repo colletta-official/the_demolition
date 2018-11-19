@@ -1,4 +1,4 @@
-var current_section=0;
+current_section=0;
 $(document).ready(function(){
 	document.body.scrollTop = 0;
 	$(window).trigger('scroll');
