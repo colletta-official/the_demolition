@@ -38,8 +38,8 @@ $(document).ready(function(){
 			var p=$(this).find(".description")[0];
 			if(p)
 			{
-				if(p.style.visibility=="hidden") p.style.visibility="visible";
-				else p.style.visibility="hidden";
+				if(p.style.visibility=="visible") p.style.visibility="hidden";
+				else p.style.visibility="visible";
 			}
 		});
 	});
