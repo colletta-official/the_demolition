@@ -22,11 +22,11 @@ h2{
 }
 ul{
 	float:right;
+	width:30%;
 	list-style:none;
 }
 ul li{
 	display:inline-block;
-	width:30%;
 	padding:30px 20px;
 }
 ui li a{
