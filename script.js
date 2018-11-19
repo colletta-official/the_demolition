@@ -15,13 +15,13 @@ $(document).ready(function(){
 			var moveTop = null;
 			if (delta < 0) {
 				if(current_section<10) {
-					curret_section++;
+					current_section++;
 					moveTop = $("#d"+current_section).offset().top;
 				}
 			}
 			else {
 				if (current_section>0) {
-					curret_section--;
+					current_section--;
 					moveTop = $("#d"+current_section).offset().top;
 				}
 			}
