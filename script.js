@@ -12,7 +12,7 @@ $(document).ready(function(){
 			}
 			else if (event.detail) delta = -event.detail / 3;
 			var moveTop = null;
-			console.log($(this).next());
+			console.log(section_next(this));
 			if (delta < 0) {
 				if(section_next(this)!=null) {
 					moveTop = section_next(this).offset().top;
