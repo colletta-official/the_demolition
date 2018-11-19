@@ -103,6 +103,12 @@ headline{
 	visibility:hidden;
 	color:#ffffff;
 }
+.ko{
+	display:block;
+}
+.en{
+	display:none;
+}
 footer{
 	text-align:center;
 }
