@@ -35,12 +35,11 @@ $(document).ready(function(){
 			}
 		});
 		$(this).on("click", function (e) {
-			var p=$(this).find(".description");
-			console.log(p,p[0]);
-			if(p[0])
+			var p=$(this).find(".description")[0];
+			if(p)
 			{
-				if(p[0].style.visibility=="hidden") p[0].style.visibility="visible";
-				else p[0].style.visibility="hidden";
+				if(p.style.visibility=="hidden") p.style.visibility="visible";
+				else p.style.visibility="hidden";
 			}
 		});
 	});
