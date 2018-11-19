@@ -1,7 +1,8 @@
-var lang="KO";
+var lang="EN";
 $(document).ready(function(){
 	document.body.scrollTop = 0;
 	$(window).trigger('scroll');
+	$(window).trigger('langtog');
 	$("section").each(function () {
 		$(this).on("mousewheel DOMMouseScroll", function (e) {
 			e.preventDefault();
@@ -58,24 +59,30 @@ function linkmove(where)
 }
 function langtog()
 {
+	var koAll=document.getElementsByClassName("ko");
+	var enAll=document.getElementsByClassName("en");
 	if(lang=="KO")
 	{
-		document.getElementsByClassName("ko").forEach(function(e){
-			e.style.display="none";
-		});
-		document.getElementsByClassName("en").forEach(function(e){
-			e.style.display="block";
-		});
+		for(var i=0;i<koAll.length;i++)
+		{
+			koAll[i].style.display="none";
+		}
+		for(var i=0;i<enAll.length;i++)
+		{
+			enAll[i].style.display="block";
+		}
 		document.getElementByID("lang").innerhtml="EN";
 		lang="EN";
 	}
 	else{
-		document.getElementsByClassName("en").forEach(function(e){
-			e.style.display="none";
-		});
-		document.getElementsByClassName("ko").forEach(function(e){
-			e.style.display="block";
-		});
+		for(var i=0;i<enAll.length;i++)
+		{
+			enAll[i].style.display="none";
+		}
+		for(var i=0;i<koAll.length;i++)
+		{
+			koAll[i].style.display="block";
+		}
 		document.getElementByID("lang").innerhtml="KO";
 		lang="KO";
 	}
