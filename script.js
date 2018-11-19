@@ -46,7 +46,7 @@ function linkmove(where)
 function section_next(e)
 {
 	var id=e.id;
-	var no=parseInt(id.substring(2, id.length));
+	var no=parseInt(id.substring(1, id.length));
 	console.log(id, no);
 	no++;
 	if(no==10) return null;
@@ -55,7 +55,7 @@ function section_next(e)
 function section_prev(e)
 {
 	var id=e.id;
-	var no=parseInt(id.substring(2, id.length));
+	var no=parseInt(id.substring(1, id.length));
 	no--;
 	if(no==0) return null;
 	else return $("#d"+no);
