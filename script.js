@@ -5,7 +5,7 @@ $(window).scroll(function() {
 	var $el = $('header');
 	var offset = $("#story").offset();
 	console.log($(this).scrollTop());
-	if($(this).scrollTop() <= offset.top) $el.addClass('white');
+	if($(this).scrollTop() < offset.top) $el.addClass('white');
 	else $el.removeClass('white');
 });
 function linkmove(where)
