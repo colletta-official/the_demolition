@@ -1,4 +1,4 @@
-var lang="EN";
+var lang="KO";
 $(document).ready(function(){
 	document.body.scrollTop = 0;
 	$(window).trigger('scroll');
