@@ -2,7 +2,6 @@ var lang="EN";
 $(document).ready(function(){
 	document.body.scrollTop = 0;
 	$(window).trigger('scroll');
-	$(window).trigger('langtog');
 	$("section").each(function () {
 		$(this).on("mousewheel DOMMouseScroll", function (e) {
 			e.preventDefault();
@@ -71,7 +70,7 @@ function langtog()
 		{
 			enAll[i].style.display="block";
 		}
-		document.getElementById("lang").innerhtml="EN";
+		document.getElementById("lang").innerHTML="EN";
 		lang="EN";
 	}
 	else{
@@ -83,7 +82,7 @@ function langtog()
 		{
 			koAll[i].style.display="block";
 		}
-		document.getElementById("lang").innerhtml="KO";
+		document.getElementById("lang").innerHTML="KO";
 		lang="KO";
 	}
 }
