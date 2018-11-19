@@ -6,6 +6,7 @@
 body{
 	font-family:'Noto Serif KR', Sans-serif;
 	font-weight:400;
+	font-size:12px;
 	color:#000000;
 }
 header{
@@ -50,7 +51,6 @@ section{
 	align-items: center;
 }
 #d0 .wrapper p{
-	font-size:0.8em;
 	color:#ffffff;
 }
 headline{
