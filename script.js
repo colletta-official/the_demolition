@@ -24,7 +24,7 @@ $(document).ready(function(){
 					moveTop = prev.offset().top;
 				}
 			}
-			if(next!==null)
+			if(!(next===null&&delta<0))
 			{
 				$("html,body").stop().animate(
 				{
