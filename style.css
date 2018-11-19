@@ -90,10 +90,12 @@ headline{
 	background-color:#ffff00;
 }
 .description{
+	position:absolute;
 	right:5%;
 	bottom:5%;
 	width:30%;
 	height:20%;
+	padding:10px;
 	background-color:RGBA(0,0,0,0.7);
 	visibility:hidden;
 	color:#ffffff;
