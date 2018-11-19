@@ -1,4 +1,3 @@
-current_section=0;
 $(document).ready(function(){
 	document.body.scrollTop = 0;
 	$(window).trigger('scroll');
@@ -14,15 +13,13 @@ $(document).ready(function(){
 			else if (event.detail) delta = -event.detail / 3;
 			var moveTop = null;
 			if (delta < 0) {
-				if(current_section<10) {
-					current_section++;
-					moveTop = $("#d"+current_section).offset().top;
+				if($(this).next() != undefined) {
+					moveTop = $(this).next().offset().top;
 				}
 			}
 			else {
-				if (current_section>0) {
-					current_section--;
-					moveTop = $("#d"+current_section).offset().top;
+				if ($(this).prev() != undefined) {
+					moveTop = $(this).prev().offset().top;
 				}
 			}
 			$("html,body").stop().animate(
