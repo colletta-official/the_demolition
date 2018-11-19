@@ -61,20 +61,20 @@ function langtog()
 	if(lang=="KO")
 	{
 		document.getElementsByClassName("ko").forEach(function(e){
-			e.style.visibility="hidden";
+			e.style.display="none";
 		});
 		document.getElementsByClassName("en").forEach(function(e){
-			e.style.visibility="visibile";
+			e.style.display="block";
 		});
 		document.getElementByID("lang").innerhtml="EN";
 		lang="EN";
 	}
 	else{
 		document.getElementsByClassName("en").forEach(function(e){
-			e.style.visibility="hidden";
+			e.style.display="none";
 		});
 		document.getElementsByClassName("ko").forEach(function(e){
-			e.style.visibility="visibile";
+			e.style.display="block";
 		});
 		document.getElementByID("lang").innerhtml="KO";
 		lang="KO";
