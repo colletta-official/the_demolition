@@ -22,7 +22,7 @@ h2{
 }
 #navi_{
 	float:right;
-	width:390px;
+	width:400px;
 	list-style:none;
 	color:#000000;
 }
@@ -51,7 +51,7 @@ section{
 	font-size:0.8em;
 	color:#ffffff;
 }
-.headline{
+#d0 .wrapper p .headline{
 	font-size:3em;
 	color:#ffffff;
 }
