@@ -10,13 +10,13 @@ $(window).scroll(function() {
 });
 $("#intro_").click(function(event){
 	var offset = $("#intro").offset();
-	$("html body").animate({scrollTop:offset.top},500);
+	$("body").animate({scrollTop:offset.top},500);
 });
 $("#story_").click(function(event){
 	var offset = $("#story").offset();
-	$("html body").animate({scrollTop:offset.top},500);
+	$("body").animate({scrollTop:offset.top},500);
 });
 $("#monument_").click(function(event){
 	var offset = $("#monument").offset();
-	$("html body").animate({scrollTop:offset.top},500);
+	$("body").animate({scrollTop:offset.top},500);
 });
