@@ -35,8 +35,8 @@ $(document).ready(function(){
 			}
 		});
 		$(this).on("click", function (e) {
-			e.preventDefault();
-			console.log(this.childNodes()[0]);
+			var p=$(this).find("description")[0];
+			console.log(p);
 		});
 	});
 });
