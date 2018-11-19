@@ -13,7 +13,7 @@ $(document).ready(function(){
 	});
 });
 $(window).scroll(function() {
-	var el = $('ul');
+	var el = $('#navi');
 	var offset = $("#story").offset();
 	console.log(el);
 	if($(this).scrollTop() <= offset.top) el.addClass('white');
