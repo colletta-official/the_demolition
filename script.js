@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	$(window).trigger('scroll');
 	$("#intro_").on("click",function(event){
 		var offset = $("#intro").offset();
 		$("html body").animate({scrollTop:offset.top},500);
