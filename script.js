@@ -49,7 +49,7 @@ function section_next(e)
 	var no=parseInt(id.substring(1, id.length));
 	console.log(id, no);
 	no++;
-	if(no==10) return null;
+	if(no==11) return null;
 	else return $("#d"+no);
 }
 function section_prev(e)
@@ -57,6 +57,6 @@ function section_prev(e)
 	var id=e.id;
 	var no=parseInt(id.substring(1, id.length));
 	no--;
-	if(no==0) return null;
+	if(no==-1) return null;
 	else return $("#d"+no);
 }
