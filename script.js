@@ -14,12 +14,12 @@ $(document).ready(function(){
 			var moveTop = null;
 			console.log(section_next(this), section_prev(this));
 			if (delta < 0) {
-				if(section_next(this).offset()) {
+				if(section_next(this)!==null) {
 					moveTop = section_next(this).offset().top;
 				}
 			}
 			else {
-				if (section_prev(this).offset()) {
+				if (section_prev(this)!==null) {
 					moveTop = section_prev(this).offset().top;
 				}
 			}
