@@ -35,7 +35,7 @@ $(document).ready(function(){
 			}
 		});
 		$(this).on("click", function (e) {
-			var p=$(this).find("description")[0];
+			var p=$(this).find(".description")[0];
 			console.log(p);
 		});
 	});
