@@ -45,6 +45,7 @@ function linkmove(where)
 }
 function section_next(e)
 {
+	console.log(e);
 	var id=e.attr('id');
 	var no=parseint(id.substring(2, str.length));
 	no++;
@@ -53,6 +54,7 @@ function section_next(e)
 }
 function section_prev(e)
 {
+	console.log(e);
 	var id=e.attr('id');
 	var no=parseint(id.substring(2, str.length));
 	no--;
