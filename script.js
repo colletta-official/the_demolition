@@ -47,7 +47,7 @@ function section_next(e)
 {
 	console.log(e);
 	var id=e.id;
-	var no=parseint(id.substring(2, str.length));
+	var no=parseInt(id.substring(2, str.length));
 	no++;
 	if(no==10) return null;
 	else return $("#d"+no);
@@ -56,7 +56,7 @@ function section_prev(e)
 {
 	console.log(e);
 	var id=e.id;
-	var no=parseint(id.substring(2, str.length));
+	var no=parseInt(id.substring(2, str.length));
 	no--;
 	if(no==0) return null;
 	else return $("#d"+no);
