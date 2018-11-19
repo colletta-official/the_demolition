@@ -22,7 +22,7 @@ h2{
 }
 #navi_{
 	float:right;
-	width:330px;
+	width:390px;
 	list-style:none;
 	color:#000000;
 }
@@ -33,6 +33,7 @@ h2{
 	display:inline-block;
 	width:90px;
 	padding:30px 20px;
+	text-align:center;
 }
 section{
 	width:100vw;
