@@ -1,3 +1,4 @@
+var lang="KO";
 $(document).ready(function(){
 	document.body.scrollTop = 0;
 	$(window).trigger('scroll');
@@ -54,6 +55,30 @@ function linkmove(where)
 {
 	var offset = $("#" + where).offset();
         $('html, body').animate({scrollTop : offset.top}, 500);
+}
+function langtog()
+{
+	if(lang=="KO")
+	{
+		document.getElementsByClassName("ko").forEach(function(e){
+			e.style.visibility="hidden";
+		});
+		document.getElementsByClassName("en").forEach(function(e){
+			e.style.visibility="visibile";
+		});
+		document.getElementByID("lang").innerhtml="EN";
+		lang="EN";
+	}
+	else{
+		document.getElementsByClassName("en").forEach(function(e){
+			e.style.visibility="hidden";
+		});
+		document.getElementsByClassName("ko").forEach(function(e){
+			e.style.visibility="visibile";
+		});
+		document.getElementByID("lang").innerhtml="KO";
+		lang="KO";
+	}
 }
 function section_next(e)
 {
