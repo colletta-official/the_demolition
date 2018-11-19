@@ -36,7 +36,7 @@ $(document).ready(function(){
 		});
 		$(this).on("click", function (e) {
 			e.preventDefault();
-			console.log(this.find("div"));
+			console.log(this.childNodes()[0]);
 		});
 	});
 });
