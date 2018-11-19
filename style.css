@@ -20,16 +20,16 @@ h2{
 	left:0px;
 	padding:30px;
 }
-ul{
+#navi_{
 	float:right;
 	width:330px;
 	list-style:none;
 	color:#000000;
 }
-ul.white{
+#navi_.white{
 	color:#ffffff;
 }
-ul li{
+#navi_ li{
 	display:inline-block;
 	width:90px;
 	padding:30px 20px;
