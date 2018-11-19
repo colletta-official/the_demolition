@@ -12,14 +12,14 @@ $(document).ready(function(){
 			}
 			else if (event.detail) delta = -event.detail / 3;
 			var moveTop = null;
-			console.log(section_next(this));
+			console.log(section_next(this), section_prev(this));
 			if (delta < 0) {
-				if(section_next(this)!=null) {
+				if(section_next(this).offset()) {
 					moveTop = section_next(this).offset().top;
 				}
 			}
 			else {
-				if (section_prev(this)!=null) {
+				if (section_prev(this).offset()) {
 					moveTop = section_prev(this).offset().top;
 				}
 			}
