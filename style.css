@@ -30,6 +30,7 @@ ul.white{
 	color:#ffffff;
 }
 ul li{
+	float:right;
 	display:inline-block;
 	padding:30px 20px;
 }
