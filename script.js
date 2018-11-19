@@ -1,14 +1,7 @@
+var current_section=0;
 $(document).ready(function(){
+	document.body.scrollTop = 0;
 	$(window).trigger('scroll');
-});
-$(window).scroll(function() {
-	var $el = $('header');
-	var offset = $("#story").offset();
-	console.log($(this).scrollTop());
-	if($(this).scrollTop() < offset.top) $el.addClass('white');
-	else $el.removeClass('white');
-});
-window.onload = function () {
 	$("section").each(function () {
 		$(this).on("mousewheel DOMMouseScroll", function (e) {
 			e.preventDefault();
@@ -20,17 +13,16 @@ window.onload = function () {
 			}
 			else if (event.detail) delta = -event.detail / 3;
 			var moveTop = null;
-			console.log(delta);
-			console.log($(this).next());
-			console.log($(this).prev());
 			if (delta < 0) {
-				if ($(this).next() != undefined) {
-					moveTop = $(this).next().offset().top;
+				if(current_section<10) {
+					curret_section++;
+					moveTop = $("#d"+current_section).offset().top;
 				}
 			}
 			else {
-				if ($(this).prev() != undefined) {
-					moveTop = $(this).prev().offset().top;
+				if (current_section>0) {
+					curret_section--;
+					moveTop = $("#d"+current_section).offset().top;
 				}
 			}
 			$("html,body").stop().animate(
@@ -41,6 +33,16 @@ window.onload = function () {
 			});
 		});
 	});
+});
+$(window).scroll(function() {
+	var $el = $('header');
+	var offset = $("#story").offset();
+	console.log($(this).scrollTop());
+	if($(this).scrollTop() < offset.top) $el.addClass('white');
+	else $el.removeClass('white');
+});
+window.onload = function () {
+	
 }
 function linkmove(where)
 {
