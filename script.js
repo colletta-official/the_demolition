@@ -14,7 +14,7 @@ $(document).ready(function(){
 	});
 });
 $(window).scroll(function() {
-	var $el = $('#navi');
+	var $el = $('#navi_');
 	var offset = $("#story").offset();
 	console.log($(this).scrollTop());
 	if($(this).scrollTop() >= offset.top) $el.addClass('white');
