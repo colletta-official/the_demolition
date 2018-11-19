@@ -90,7 +90,7 @@ headline{
 	background-color:#ffff00;
 }
 .description{
-	position:absolute;
+	position:relative;
 	right:5%;
 	bottom:5%;
 	width:30%;
