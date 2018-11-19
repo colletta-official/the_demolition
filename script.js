@@ -15,7 +15,7 @@ $(document).ready(function(){
 $(window).scroll(function() {
 	var el = $('ul');
 	var offset = $("#story").offset();
-	console.log(offset);
+	console.log(el);
 	if($(this).scrollTop() <= offset.top) el.addClass('white');
-	else $el.removeClass('white');
+	else el.removeClass('white');
 });
