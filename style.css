@@ -22,7 +22,7 @@ h2{
 }
 ul{
 	float:right;
-	width:30%;
+	width:330px;
 	list-style:none;
 	color:#000000;
 }
@@ -30,8 +30,8 @@ ul.white{
 	color:#ffffff;
 }
 ul li{
-	float:right;
 	display:inline-block;
+	width:90px;
 	padding:30px 20px;
 }
 section{
