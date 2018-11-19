@@ -71,7 +71,7 @@ function langtog()
 		{
 			enAll[i].style.display="block";
 		}
-		document.getElementByID("lang").innerhtml="EN";
+		document.getElementById("lang").innerhtml="EN";
 		lang="EN";
 	}
 	else{
@@ -83,7 +83,7 @@ function langtog()
 		{
 			koAll[i].style.display="block";
 		}
-		document.getElementByID("lang").innerhtml="KO";
+		document.getElementById("lang").innerhtml="KO";
 		lang="KO";
 	}
 }
