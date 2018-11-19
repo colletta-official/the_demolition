@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif+KR:400,700');
 *{
+	margin:0px;
+	padding:0px;
+}
+body{
 	font-family:'Noto Serif KR', Sans-serif;
 	font-weight:400;
 	color:#000000;
-	margin:0px;
-	padding:0px;
 }
 header{
 	position:fixed;
 	top:0px;
 	left:0px;
 	width:100%;
+}
+header .white{
+	color:#ffffff;
 }
 h2{
 	position:relative;
@@ -24,10 +29,6 @@ h2{
 	float:right;
 	width:400px;
 	list-style:none;
-	color:#000000;
-}
-#navi_.white{
-	color:#ffffff;
 }
 #navi_ li{
 	display:inline-block;
