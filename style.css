@@ -47,7 +47,7 @@ section{
 	height:100vh;
 }
 #d0{
-	background:#000000;
+	background: url('img/the_demolition-0.png') center/cover;
 	text-align:center;
 	display:flex;
 	flex-direction: row;
