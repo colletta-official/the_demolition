@@ -20,6 +20,9 @@ window.onload = function () {
 			}
 			else if (event.detail) delta = -event.detail / 3;
 			var moveTop = null;
+			console.log(delta);
+			console.log($(this).next());
+			console.log($(this).prev());
 			if (delta < 0) {
 				if ($(this).next() != undefined) {
 					moveTop = $(this).next().offset().top;
